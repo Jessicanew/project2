@@ -1,0 +1,37 @@
+
+			<div class= "form-group">
+				<div class = "col-md-2">
+					<label>Last Name:</label>
+				</div>
+				<div class = "col-md-10">
+					<input type="text" ng-model="person.lastName" id="person.lastName" placeholder="{{person.lastName}}" required> Must include last name.
+				</div>
+			</div>
+			<div class = "form-group">
+				<div class = "col-md-2">
+					<label>First Name: </label>
+				</div>	
+				<div class = "col-md-10">	
+					<input type="text" ng-model="person.firstName" id="person.firstName" placeholder="{{person.firstName}}" required> Must include first name.
+				</div>
+			</div>
+			<div class= "form-group">
+				<div class = "col-md-2">
+					<label> Email: </label>
+				</div>
+				<div class = "col-md-10">
+					<input type="text" ng-model="person.email" id="person.email" placeholder="{{person.email}}" required> Must include email.
+				</div>
+			</div>
+			<div class = "form-group">
+				<div>
+					<input type="submit" id="submit" value="Submit" class = "btn btn-warning btn-block"/>
+				</div>
+			</div>
+			<div class = "form-group">
+				<div>
+					<a ui-sref="list" class="btn btn-primary btn-block">View Directory</a>
+				</div>
+			</div>
+			{{person.lastName}}  {{person.firstName}}  {{person.email}}
+			<ul><li ng-repeat = "person in persons" >{{person.firstName}}</li></ul>

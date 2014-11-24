@@ -1,0 +1,13 @@
+<div class = "panel panel-default">
+	<div class = "panel-heading">
+		<div class = "panel-title">{{title}}</div>
+	</div>
+	<div class="panel-body">
+		<ul class="list-group row">
+			<li class="list-group-item col-xs-12" ng-repeat="person in persons">
+				<a ui-sref="edit({id: person.id})">list2 {{person.lastName}} {{person.firstName}} </a> {{person.email}}	
+				<input type="button" id="deleteBtn" value="Delete" class = "btn btn-primary pull-right" ng-click = "delete(person.id)"/>
+			</li>
+		</ul>
+		<a ui-sref="add" class= "btn btn-warning btn-block">Add Contact</a>	
+	</div>
