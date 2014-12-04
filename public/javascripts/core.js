@@ -15,7 +15,6 @@ addressBookApp.service('addBookService', ['$http', '$state', function($http, $st
 	};
 	
 	this.delete = function(id){
-		//return $http.delete('/api/contacts/'+ id, {params: {id: id}});
 		return $http.delete('/api/contacts/'+ id);
 	};
 	
